@@ -1,3 +1,12 @@
+/* Fontes Utilizadas */
+
+/* Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+/* Poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -23,4 +32,17 @@ body{
     display: flex;
     list-style-type: none;
     gap: 48px;
+}
+
+.title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #EEEEEE;
+}
+
+.navigation-link{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #EEEEEE;
 }
