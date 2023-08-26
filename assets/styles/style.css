@@ -17,6 +17,11 @@ body{
     background-color: #222831;
 }
 
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
 .container{
     width: calc(100% - 40px);
     max-width: 1200px;
@@ -41,8 +46,208 @@ body{
 }
 
 .navigation-link{
-    font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: #EEEEEE;
+}
+
+/* codigo da primeira secao */
+.section-banner{
+    margin: 100px 0 64px;
+
+    /*
+        margin-top: 100px;
+        margin-right: 0;
+        margin-bottom: 100px;
+        margin-left: 0;
+    */
+}
+
+.section-banner .banner-content .title{
+    font-size: 96px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 96px;
+}
+
+.section-banner .banner-content .title-colored{
+    color: #00ADB5;
+}
+
+.section-banner .set-buttons {
+    display: flex;
+    margin-top: 48px
+}
+
+.section-banner .set-buttons .button {
+    padding: 10px 32px;
+    border: none;
+    border-radius: 24px; 
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    text-shadow: 0px 3px 4px black;
+    transition: all 0.2s ease-in-out;
+}
+
+.section-banner .set-buttons .button:hover{
+    box-shadow: 0px 0px 5px black;
+    transform: scale(1.02);
+    /* opacity: 0.8; */
+    /* transform: translateY(7px); */
+}
+
+.section-banner .button.hire-btn {
+    background-color: #00ADB5;
+    margin-right: 24px;
+}
+
+.section-banner .button.download-btn {
+    background-color: #393E46BF;
+
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-banner .button.download-btn img{
+    max-width: 22px;
+}
+
+.section-banner .banner-img {
+    position: relative;
+}
+
+.section-banner .banner-img img:nth-of-type(2){
+    position: absolute;
+    left: 0;
+    bottom: -93px;
+}
+
+.section-banner .banner-content .box-arrow {
+    height: 96px;
+    width: 96px;
+    background-color: #393E46BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 243px;
+    margin-left: auto;
+}
+
+.section-banner .box-arrow img{
+    max-width: 40px;
+}
+
+.section-banner .banner-content .wrapper-content {
+    width: fit-content;
+}
+
+.section-banner .container {
+    align-items: flex-start;
+}
+
+/* codigo da segunda secao */
+.section-about{
+    margin: 230px 0 217px;
+}
+
+.section-about .content-about .title-about{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 96px;
+    color: #EEEEEE;
+}
+
+.section-about .content-about .title-colored-about{
+    color: #00ADB5;
+}
+
+.section-about .img-about {
+    position: relative;
+}
+
+.section-about .img-about img:nth-of-type(2){
+    position: absolute;
+    left: 108px;
+    bottom: -76px;
+    max-width: 412px;
+}
+
+.section-about .container-about {
+    align-items: flex-start;
+}
+
+.section-about .set-text{
+    width: 100%;
+    max-width: 389px;
+}
+
+.section-about .set-text .text-about{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+    color: #EEEEEE;
+}
+
+/* codigo da terceira secao */
+.section-projects{
+    padding: 268px 0;
+    background-image: url(/assets/img/background-1.png);
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.section-projects .container{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section-projects .content-projects .title-projects{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 96px;
+    color: #EEEEEE;
+}
+
+.section-projects .content-projects .title-colored-projects{
+    color: #00ADB5;
+}
+
+.section-projects .container-projects {
+    align-items: flex-start;
+}
+
+.section-projects .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;    
+}
+
+.section-projects .project-cards .card{
+    width: 100%;
+    max-width: 368px;
+    background-color: #393E4680;
+    backdrop-filter: blur(1px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px
+}
+
+.section-projects .card img{
+    max-width: 265px;
+    height: 158px;
+    object-fit: cover;
 }
