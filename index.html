@@ -3,9 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="/assets/styles/style.css">
+
+    <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+
+    <link rel="icon" sizes="16x16" href="./assets/img/icon-head-32.png">
+    <title>Wellington Gautama</title>
 </head>
-<body>
-        
+<body>    
+    <header>
+        <div class="container">
+            <div class="title-portfolio">
+                <h1 class="title">Wellington Gautama</h1>
+            </div>
+    
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a class="navigation-link" href="#">Home</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#about">Sobre</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#projects">Projetos</a></li>
+                    <li class="navigation-item"><a class="navigation-link" href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+
+            <!-- EFEITO MENU MOBILE -->
+            <div class="btn-mobile" id="button">
+                <div class="btn-open-menu" id="btn-menu">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="menu-mobile" id="menu-mobile">
+                    <div class="btn-close">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a class="option-mobile" href="#">Home</a></li>
+                            <li><a class="option-mobile" href="#about">Sobre</a></li>
+                            <li><a class="option-mobile" href="#projects">Projetos</a></li>
+                            <li><a class="option-mobile" href="#contact">Contatos</a></li>
+                        </ul>
+                    </nav>                
+                </div>
+                <div class="overlay-menu" id="overlay-menu"></div>
+            </div>
+
+
+            <!-- FIM DO EFEITO MENU MOBILE -->            
+        </div>    
+    </header>
+
+    
+    <main>
+        <section class="section-banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h2 class="title">
+                        Software <span class="title-colored">developer</span>
+                    </h2>
+
+                    <div class="wrapper-content">
+                        <div class="set-buttons">
+                            <a href="mailto:wellingtongautama@gmail.com" class="button hire-btn">Contato</a>
+                            <a href="/assets/docs/cv-wellington.pdf" target="_blank" class="button download-btn">
+                                Download CV
+                                <img src="/assets/img/download.svg" alt="download icon">
+                            </a>
+                        </div>
+                        
+                        <a href="#about">
+                            <div class="box-arrow">
+                                <img src="assets/img/arrow-icon.svg" alt="icone de seta"> 
+                            </div>
+                            <span id="about"></span>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="banner-img">
+                    <img src="/assets/img/set-icons.png" alt="icones de tecnologias">
+                    <img src="/assets/img/person.png" alt="pessoa sentada com notebook">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Segunda secao -->
+    <section class="section-about">
+        <div class="container">
+            <div class="content-about">
+                <h2 class="title-about">
+                    Sobre <span class="title-colored-about">mim</span>
+                </h2>
+
+                <div class="set-text">                    
+                    <p class="text-about" id="resumed-text">Olá, meu nome é Wellington, mas pode me chamar de Junior. Tenho formação na área de TI, mais precisamente em Sistemas de Informação, e tenho como meta aprimorar minhas habilidades técnicas e progredir na minha carreira profissional. Estou sempre em busca de aprimoramento e, além da graduação, continuo investindo em cursos e acompanhando as transformações digitais... <button type="button" class="read-more">Ler mais</button></p>     
+                    
+                    <div class="hidden-content">
+                        <p class="text-about">Olá, meu nome é Wellington, mas pode me chamar de Junior. Tenho formação na área de TI, mais precisamente em Sistemas de Informação, e tenho como meta aprimorar minhas habilidades técnicas e progredir na minha carreira profissional. Estou sempre em busca de aprimoramento e, além da graduação, continuo investindo em cursos e acompanhando as transformações digitais.</p>       
+                        <br />
+                        <p class="text-about">Tenho um ano de experiência em desenvolvimento back-end, durante o qual utilizei a linguagem de programação Java e trabalhei com o banco de dados Oracle. Ao longo desse período, desempenhei diversas atividades, incluindo a manutenção de sistemas, realização de testes e colaboração na evolução dos projetos junto com a equipe.</p>       
+                        <br />
+                        <p class="text-about">Atualmente, estou dedicando meu tempo aos estudos e focando na busca por oportunidades na área de front-end, com o objetivo de adquirir experiência e continuar a minha evolução profissional.</p>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="img-about">
+                <img src="/assets/img/set-icons-about.png" alt="icones de tecnologias">
+                <img src="/assets/img/person-about.png" alt="pessoa sentada com notebook">
+            </div>
+        </div>
+    </section>
+
+    <!-- Terceira secao -->
+    <section id="projects" class="section-projects">
+        <div class="container">
+            <div class="content-projects">
+                <h2 class="title-projects">
+                    Meus<span class="title-colored-projects"> projetos</span>
+                </h2>
+            </div>
+
+            <div class="project-cards">
+                <div class="card">
+                    <img src="assets/img/projects/gerador-senha.png" alt="imagem do projeto">
+                    <span>Gerador de Senha</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <span>Calculadora</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <span>Calculadora</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <span>Calculadora</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <span>Calculadora</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <span>Calculadora</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <span>Calculadora</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <span>Calculadora</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <span>Calculadora</span>
+
+                    <div class="box-buttons">
+                        <a href="#">GitHub</a>
+                        <a href="#">Preview</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Quarta secao -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <div class="content-contact">
+                <h2 class="title-contact">
+                    Contatos
+                </h2>
+            </div>
+
+            <div class="contact-cards">
+                <div class="card">
+                    <img src="assets/img/icon-email-24.png" alt="">
+                    <span>Email</span>
+                    <a class="description-contact">wellingtongautama@gmail.com</a>
+                    <a href="mailto:wellingtongautama@gmail.com" class="button-contact">Entrar em contato</a>
+                </div>
+                <div class="card">
+                    <img src="assets/img/icon-linkedin-32.png" alt="">
+                    <span>LinkedIn</span>
+                    <a class="description-contact">Wellington Gautama</a>
+                    <a href="https://www.linkedin.com/in/wellingtongautama/" target="_blank" class="button-contact">Entrar em contato</a>
+                </div>
+                <div class="card">
+                    <img src="assets/img/icon-whatsapp-24.png" alt="">
+                    <span>WhatsApp</span>
+                    <a class="description-contact">+5575992704243</a>
+                    <a href="https://wa.me/5575992704243" target="_blank" class="button-contact">Entrar em contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="#"><img src="./assets/img/footer-icons/home.svg" alt="">Home</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#about"><img src="./assets/img/footer-icons/about-me.svg" alt="">Sobre</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#projects"><img src="./assets/img/footer-icons/gear-project.svg" alt="">Projetos</a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a href="#contact"><img src="./assets/img/footer-icons/contact.svg" alt="">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="social-medias">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="img-social-medias" href="https://www.instagram.com/_jr.costa/" target="_blank"><img src="./assets/img/footer-icons/instagram.svg" alt=""></a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a class="img-social-medias" href="https://www.linkedin.com/in/wellingtongautama/" target="_blank"><img src="./assets/img/footer-icons/linkedin.svg" alt=""></a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a class="img-social-medias" href="https://github.com/GautamaJr" target="_blank"><img src="./assets/img/footer-icons/github.svg" alt=""></a>
+                    </li>
+
+                    <li class="navigation-item">
+                        <a class="img-social-medias" href="https://wa.me/5575992704243" target="_blank"><img src="./assets/img/footer-icons/icon-whatsapp.svg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="box-copyright">
+                <span>Wellington Gautama - HTML | CSS | JS</span>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
