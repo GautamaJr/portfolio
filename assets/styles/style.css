@@ -543,6 +543,7 @@ header .btn-mobile{
     backdrop-filter: blur(1px);
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
 
     display: flex;
     justify-content: center;
