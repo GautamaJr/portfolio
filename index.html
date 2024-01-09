@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +15,16 @@
     <link rel="icon" sizes="16x16" href="./assets/img/icon-head-32.png">
     <title>Wellington Gautama</title>
 </head>
-<body>    
+
+<body>
     <header>
         <div class="container">
             <div class="title-portfolio">
-                <h1 class="title">Wellington Gautama</h1>
+                <a href="#">
+                    <h1 class="title">Wellington Gautama</h1>
+                </a>
             </div>
-    
+
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item"><a class="navigation-link" href="#">Home</a></li>
@@ -48,17 +52,17 @@
                             <li><a class="option-mobile" href="#projects">Projetos</a></li>
                             <li><a class="option-mobile" href="#contact">Contatos</a></li>
                         </ul>
-                    </nav>                
+                    </nav>
                 </div>
                 <div class="overlay-menu" id="overlay-menu"></div>
             </div>
 
 
-            <!-- FIM DO EFEITO MENU MOBILE -->            
-        </div>    
+            <!-- FIM DO EFEITO MENU MOBILE -->
+        </div>
     </header>
 
-    
+
     <main>
         <section class="section-banner">
             <div class="container">
@@ -75,15 +79,14 @@
                                 <img src="/assets/img/download.svg" alt="download icon">
                             </a>
                         </div>
-                        
+
                         <a href="#about">
                             <div class="box-arrow">
-                                <img src="assets/img/arrow-icon.svg" alt="icone de seta"> 
+                                <img src="assets/img/arrow-icon.svg" alt="icone de seta">
                             </div>
-                            <span id="about"></span>
                         </a>
                     </div>
-                    
+
                 </div>
 
                 <div class="banner-img">
@@ -96,24 +99,24 @@
     </main>
 
     <!-- Segunda secao -->
-    <section class="section-about">
+    <section id="about" class="section-about">
         <div class="container">
             <div class="content-about">
                 <h2 class="title-about">
                     Sobre <span class="title-colored-about">mim</span>
                 </h2>
 
-                <div class="set-text">                    
-                    <p class="text-about" id="resumed-text">Olá, meu nome é Wellington, mas pode me chamar de Junior. Tenho formação na área de TI, mais precisamente em Sistemas de Informação, e tenho como meta aprimorar minhas habilidades técnicas e progredir na minha carreira profissional. Estou sempre em busca de aprimoramento e, além da graduação, continuo investindo em cursos e acompanhando as transformações digitais... <button type="button" class="read-more">Ler mais</button></p>     
-                    
+                <div class="set-text">
+                    <p class="text-about" id="resumed-text">Olá, meu nome é Wellington, mas pode me chamar de Junior. Tenho formação na área de TI, mais precisamente em Sistemas de Informação, e tenho como meta aprimorar minhas habilidades técnicas e progredir na minha carreira profissional. Estou sempre em busca de aprimoramento e, além da graduação, continuo investindo em cursos e acompanhando as transformações digitais... <button type="button" class="read-more">Ler mais</button></p>
+
                     <div class="hidden-content">
-                        <p class="text-about">Olá, meu nome é Wellington, mas pode me chamar de Junior. Tenho formação na área de TI, mais precisamente em Sistemas de Informação, e tenho como meta aprimorar minhas habilidades técnicas e progredir na minha carreira profissional. Estou sempre em busca de aprimoramento e, além da graduação, continuo investindo em cursos e acompanhando as transformações digitais.</p>       
+                        <p class="text-about">Olá, meu nome é Wellington, mas pode me chamar de Junior. Tenho formação na área de TI, mais precisamente em Sistemas de Informação, e tenho como meta aprimorar minhas habilidades técnicas e progredir na minha carreira profissional. Estou sempre em busca de aprimoramento e, além da graduação, continuo investindo em cursos e acompanhando as transformações digitais.</p>
                         <br />
-                        <p class="text-about">Tenho um ano de experiência em desenvolvimento back-end, durante o qual utilizei a linguagem de programação Java e trabalhei com o banco de dados Oracle. Ao longo desse período, desempenhei diversas atividades, incluindo a manutenção de sistemas, realização de testes e colaboração na evolução dos projetos junto com a equipe.</p>       
+                        <p class="text-about">Tenho um ano de experiência em desenvolvimento back-end, durante o qual utilizei a linguagem de programação Java e trabalhei com o banco de dados Oracle. Ao longo desse período, desempenhei diversas atividades, incluindo a manutenção de sistemas, realização de testes e colaboração na evolução dos projetos junto com a equipe.</p>
                         <br />
                         <p class="text-about">Atualmente, estou dedicando meu tempo aos estudos e focando na busca por oportunidades na área de front-end, com o objetivo de adquirir experiência e continuar a minha evolução profissional.</p>
                     </div>
-                </div>   
+                </div>
             </div>
 
             <div class="img-about">
@@ -134,7 +137,7 @@
 
             <div class="project-cards">
                 <div class="card">
-                    <img src="assets/img/projects/gerador-senha.png" alt="imagem do projeto">
+                    <div class="img-project" style="background-image: url(assets/img/projects/img-porfolio.jpg);"></div>
                     <span>Gerador de Senha</span>
 
                     <div class="box-buttons">
@@ -144,7 +147,7 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/img/projects/calc.png" alt="imagem do projeto">
+                    <div class="img-project" style="background-image: url(assets/img/projects/teste.jpg);"></div>
                     <span>Calculadora</span>
 
                     <div class="box-buttons">
@@ -154,15 +157,15 @@
                 </div>
 
                 <div class="card">
-                    <img src="assets/img/projects/orcamento-pessoal.png" alt="imagem do projeto">
+                    <div class="img-project" style="background-image: url(assets/img/projects/img-porfolio.jpg);"></div>
                     <span>Orçamento pessoal</span>
 
                     <div class="box-buttons">
                         <a href="https://github.com/GautamaJr/JavaScript/tree/main/app-orcamento-pessoal" target="_blank">GitHub</a>
                         <a href="https://orcamento-pessoal-wg.vercel.app/" target="_blank">Visualizar</a>
                     </div>
-                </div>               
-                
+                </div>
+
             </div>
         </div>
     </section>
@@ -247,6 +250,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
