@@ -9,11 +9,13 @@
     <!-- FIM BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="/assets/styles/style.css">
 
-    <script src="assets/js/menu.js" defer></script>
-    <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/plugins/simple-anime.js"></script>
+    <script src="assets/js/script.js" defer></script>
 
     <link rel="icon" sizes="16x16" href="./assets/img/icon-head-32.png">
     <title>Wellington Gautama</title>
+
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
@@ -67,12 +69,12 @@
         <section class="section-banner">
             <div class="container">
                 <div class="banner-content">
-                    <h2 class="title">
+                    <h2 class="title fadeInDown" data-anime="200">
                         Software <span class="title-colored">developer</span>
                     </h2>
 
                     <div class="wrapper-content">
-                        <div class="set-buttons">
+                        <div class="set-buttons fadeInDown" data-anime="400">
                             <a href="mailto:wellingtongautama@gmail.com" class="button hire-btn">Contato</a>
                             <a href="/assets/docs/cv-wellington.pdf" target="_blank" class="button download-btn">
                                 Download CV
@@ -81,7 +83,7 @@
                         </div>
 
                         <a href="#about">
-                            <div class="box-arrow">
+                            <div class="box-arrow fadeInDown" data-anime="600">
                                 <img src="assets/img/arrow-icon.svg" alt="icone de seta">
                             </div>
                         </a>
@@ -89,7 +91,7 @@
 
                 </div>
 
-                <div class="banner-img">
+                <div class="banner-img fadeInDown" data-anime="800">
                     <img src="/assets/img/set-icons.png" alt="icones de tecnologias">
                     <img src="/assets/img/person.png" alt="pessoa sentada com notebook">
                 </div>
@@ -137,27 +139,27 @@
 
             <div class="project-cards">
                 <div class="card">
-                    <div class="img-project" style="background-image: url(assets/img/projects/img-porfolio.jpg);"></div>
-                    <span>Gerador de Senha</span>
+                    <div class="img-project" style="background-image: url(assets/img/projects/bikcraft.jpg);"></div>
+                    <span>Bikcraft</span>
 
                     <div class="box-buttons">
-                        <a href="https://github.com/GautamaJr/JavaScript/tree/main/gerador-de-senha" target="_blank">GitHub</a>
+                        <a href="https://github.com/GautamaJr/bikcraft" target="_blank">GitHub</a>
                         <a href="https://gerador-senha-wg.vercel.app/" target="_blank">Visualizar</a>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="img-project" style="background-image: url(assets/img/projects/teste.jpg);"></div>
-                    <span>Calculadora</span>
+                    <div class="img-project" style="background-image: url(assets/img/projects/portfolio.jpg);"></div>
+                    <span>Portfólio</span>
 
                     <div class="box-buttons">
-                        <a href="https://github.com/GautamaJr/JavaScript/tree/main/calculadora" target="_blank">GitHub</a>
+                        <a href="https://github.com/GautamaJr/portfolio-tech" target="_blank">GitHub</a>
                         <a href="https://calculadora-wg.vercel.app/" target="_blank">Visualizar</a>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="img-project" style="background-image: url(assets/img/projects/img-porfolio.jpg);"></div>
+                    <div class="img-project" style="background-image: url(assets/img/projects/portfolio.jpg);"></div>
                     <span>Orçamento pessoal</span>
 
                     <div class="box-buttons">
