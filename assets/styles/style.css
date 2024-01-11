@@ -38,7 +38,17 @@ a {
   .section-about .container .content-about h2,
   .section-projects .container .content-projects h2,
   .section-contact .container .content-contact h2 {
-    font-size: 38px;
+    font-size: 32px;
+  }
+}
+
+/* RESPONSIVO GERAL */
+@media screen and (max-width: 800px) {
+  .section-about,
+  .section-projects,
+  .section-contact {
+    padding-top: 100px;
+    padding-bottom: 200px;
   }
 }
 
@@ -99,7 +109,52 @@ header {
   transform: scale(1.05);
 }
 
-/* EFEITO MENU MOBILE */
+/*--------------------------------------------------------------
+# EFEITO MENU MOBILE
+--------------------------------------------------------------*/
+
+header .profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header .profile-container h2 {
+  color: #fff;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+header .profile-container h2::after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 2px;
+  background: #111111;
+  margin-top: 40px;
+}
+
+header .profile img {
+  background-color: #393e46;
+  margin: 20px auto;
+  display: block;
+  width: 156px;
+  border: 3px solid #00adb5;
+  max-width: 100%;
+  height: auto;
+}
+
+header .img-profile {
+  border-radius: 50%;
+}
+
+.list-menu {
+  padding-top: 60px;
+}
 
 .btn-mobile {
   margin-top: 5px;
@@ -148,7 +203,7 @@ header {
   color: #fff;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   padding: 20px 8%;
   display: block;
 }
@@ -173,7 +228,50 @@ header .btn-mobile {
   display: none;
 }
 
-/* FIM DO EFEITO MENU MOBILE */
+@media screen and (max-width: 580px) {
+  header .profile img {
+    width: 126px;
+  }
+
+  header .profile-container h2 {
+    font-size: 20px;
+  }
+
+  .list-menu {
+    padding-top: 40px;
+  }
+
+  .menu-mobile nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  header .profile img {
+    width: 100px;
+  }
+
+  header .profile-container h2 {
+    font-size: 16px;
+  }
+
+  header .profile-container h2::after {
+    margin-top: 20px;
+  }
+
+  .menu-mobile nav ul li a {
+    font-size: 14px;
+    padding: 10px 8%;
+  }
+
+  .list-menu {
+    padding-top: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# FIM DO EFEITO EFEITO MENU MOBILE
+--------------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
   header .navigation-list {
@@ -233,7 +331,9 @@ header .btn-mobile {
   }
 }
 
-/* codigo da primeira secao */
+/*--------------------------------------------------------------
+# CODIGO DA PRIMEIRA SECAO (home)
+--------------------------------------------------------------*/
 .section-banner {
   padding-top: 200px;
   padding-bottom: 500px;
@@ -280,11 +380,6 @@ header .btn-mobile {
   text-transform: uppercase;
   line-height: 96px;
 }
-
-/* Distanciar conteudo da sessão seguinte em dispositivos maiores */
-/* .section-banner .container {
-  margin-bottom: 440px;
-} */
 
 .section-banner .banner-content .title-colored {
   color: #00adb5;
@@ -488,7 +583,9 @@ header .btn-mobile {
   }
 }
 
-/* codigo da segunda secao */
+/*--------------------------------------------------------------
+# CODIGO DA SEGUNDA SECAO (about)
+--------------------------------------------------------------*/
 .section-about {
   padding-top: 146px;
   padding-bottom: 300px;
@@ -594,7 +691,9 @@ header .btn-mobile {
   }
 }
 
-/* codigo da terceira secao */
+/*--------------------------------------------------------------
+# CODIGO DA TERCEIRA SECAO (project)
+--------------------------------------------------------------*/
 .section-projects {
   padding-top: 146px;
   padding-bottom: 300px;
@@ -678,7 +777,7 @@ header .btn-mobile {
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  background-color: #000000b8; /*Outras cores: #333333b8, #1a1a1ab8 */
+  background-color: #000000b8; /* Outras opcoes: #333333b8, #1a1a1ab8 */
   backdrop-filter: blur(1px);
   transition: opacity 0.3s ease-in-out;
 }
@@ -745,12 +844,23 @@ header .btn-mobile {
   }
 }
 
-/* codigo da quarta secao (Contato) */
+/*--------------------------------------------------------------
+# CODIGO DA QUARTA SECAO (contato)
+--------------------------------------------------------------*/
 .section-contact {
   padding-top: 146px;
   padding-bottom: 300px;
   background-repeat: repeat;
   background-size: auto;
+}
+
+.section-contact::after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 2px;
+  background: #393e4680;
+  margin-top: 100px;
 }
 
 .section-contact .container {
@@ -837,7 +947,9 @@ header .btn-mobile {
   object-fit: cover;
 } */
 
-/* footer */
+/*--------------------------------------------------------------
+# RODAPE (footer)
+--------------------------------------------------------------*/
 .footer {
   padding: 100px 0 30px;
 }
@@ -933,15 +1045,5 @@ header .btn-mobile {
 
   footer .container .box-copyright span {
     font-size: 14px;
-  }
-}
-
-/* RESPONSIVO GERAL */
-@media screen and (max-width: 800px) {
-  .section-about,
-  .section-projects,
-  .section-contact {
-    padding-top: 100px;
-    padding-bottom: 200px;
   }
 }
