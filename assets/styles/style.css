@@ -780,7 +780,7 @@ header .btn-mobile {
 }
 
 /* adiciona a classe 'card-Hover' para o elemento 'card' em dispositivos mobile */
-.section-projects .card.card-hover .box-buttons {
+.section-projects .card.card-active .box-buttons {
   opacity: 1;
   pointer-events: all;
 }

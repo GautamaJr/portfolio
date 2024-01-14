@@ -48,7 +48,7 @@ if (isMobile) {
   // Função para remover 'hover' do elemento atual
   function removerHoverAtual() {
     if (elementoAtualHover) {
-      elementoAtualHover.classList.remove("card-hover");
+      elementoAtualHover.classList.remove("card-active");
       elementoAtualHover = null;
     }
   }
@@ -67,7 +67,7 @@ if (isMobile) {
       removerHoverAtual();
 
       // Adiciona 'hover' ao elemento clicado
-      this.classList.add("card-hover");
+      this.classList.add("card-active");
 
       // Atualiza o elemento atualmente com 'hover'
       elementoAtualHover = this;
