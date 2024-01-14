@@ -779,6 +779,12 @@ header .btn-mobile {
   pointer-events: all;
 }
 
+/* adiciona a classe 'card-Hover' para o elemento 'card' em dispositivos mobile */
+.section-projects .card.card-hover .box-buttons {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .section-projects .card span {
   color: white;
   font-weight: bold;

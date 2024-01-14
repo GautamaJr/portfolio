@@ -37,6 +37,44 @@ navOptions.forEach((option) => {
 
 // Fim do JS do Menu Mobile
 
+// Efeito Hover nos cards de projetos em dispositivos mobile
+// Verifica se o dispositivo é um dispositivo móvel
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+if (isMobile) {
+  // Armazena a referência do elemento atualmente com 'hover'
+  let elementoAtualHover = null;
+
+  // Função para remover 'hover' do elemento atual
+  function removerHoverAtual() {
+    if (elementoAtualHover) {
+      elementoAtualHover.classList.remove("card-hover");
+      elementoAtualHover = null;
+    }
+  }
+
+  document.addEventListener("click", function (event) {
+    // Verifica se o clique ocorreu fora do elemento
+    if (!event.target.closest(".card")) {
+      removerHoverAtual();
+    }
+  });
+
+  // Adiciona o ouvinte de evento de clique a todos os elementos
+  document.querySelectorAll(".card").forEach(function (elemento) {
+    elemento.addEventListener("click", function () {
+      // Remove 'hover' do elemento atual
+      removerHoverAtual();
+
+      // Adiciona 'hover' ao elemento clicado
+      this.classList.add("card-hover");
+
+      // Atualiza o elemento atualmente com 'hover'
+      elementoAtualHover = this;
+    });
+  });
+}
+
 // JS do Menu Ativo
 // document.addEventListener("DOMContentLoaded", function () {
 //   const links = document.querySelectorAll("header .navigation-list a");
