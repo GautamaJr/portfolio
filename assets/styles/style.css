@@ -756,6 +756,11 @@ header .btn-mobile {
   background-position: 100% 100%;
 }
 
+/* percorre toda imagem de background caso o card esteja com a classe '.card-active' */
+.section-projects .card.card-active .img-project {
+  background-position: 100% 100%;
+}
+
 .section-projects .card .box-buttons {
   opacity: 0;
   pointer-events: none;
