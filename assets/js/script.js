@@ -1,4 +1,6 @@
-// JS do botão "Ler mais" na sessão Sobre
+/*--------------------------------------------------------------
+# BOTÃO "LER MAIS" NA SEÇÃO SOBRE
+--------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
   let readMoreBtn = document.querySelector(".read-more");
   let setTextElement = document.querySelector(".set-text");
@@ -7,10 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     setTextElement.classList.add("expand-text");
   });
 });
+// --------------- Fim da seção Sobre ---------------
 
-// Fim do JS da sessão Sobre
-
-// JS do Menu Mobile
+/*--------------------------------------------------------------
+# MENU MOBILE
+--------------------------------------------------------------*/
 let btnMenu = document.getElementById("btn-menu");
 let menu = document.getElementById("menu-mobile");
 let closeButton = document.querySelector(".btn-close");
@@ -34,10 +37,50 @@ navOptions.forEach((option) => {
     menu.classList.remove("open-menu");
   });
 });
+// --------------- Fim do Menu Mobile ---------------
 
-// Fim do JS do Menu Mobile
+/*--------------------------------------------------------------
+# EFEITO DE HOVER NOS CARDS DE PROJETOS PARA DISPOSITIVOS MOVEIS
+--------------------------------------------------------------*/
+// Verifica se o dispositivo é um dispositivo móvel
+// const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-// JS do Menu Ativo
+// Armazena a referência do elemento atualmente com 'hover'
+let elementoAtualHover = null;
+
+// Função para remover 'hover' do elemento atual
+function removerHoverAtual() {
+  if (elementoAtualHover) {
+    elementoAtualHover.classList.remove("card-active");
+    elementoAtualHover = null;
+  }
+}
+
+document.addEventListener("click", function (event) {
+  // Verifica se o clique ocorreu fora do elemento
+  if (!event.target.closest(".card")) {
+    removerHoverAtual();
+  }
+});
+
+// Adiciona o ouvinte de evento de clique a todos os elementos
+document.querySelectorAll(".card").forEach(function (elemento) {
+  elemento.addEventListener("click", function () {
+    // Remove 'hover' do elemento atual
+    removerHoverAtual();
+
+    // Adiciona 'hover' ao elemento clicado
+    this.classList.add("card-active");
+
+    // Atualiza o elemento atualmente com 'hover'
+    elementoAtualHover = this;
+  });
+});
+// --------------- Fim do efeito Hover nos Cards ---------------
+
+/*--------------------------------------------------------------
+# MENU ATIVO
+--------------------------------------------------------------*/
 // document.addEventListener("DOMContentLoaded", function () {
 //   const links = document.querySelectorAll("header .navigation-list a");
 
@@ -71,9 +114,12 @@ navOptions.forEach((option) => {
 //   verificarVisibilidade(); // Ativar ao carregar a página
 // });
 
-// Fim do JS do Menu Ativo
+// --------------- Fim do Menu Ativo ---------------
 
-// Animação
+/*--------------------------------------------------------------
+# ANIMAÇÃO (PLUGIN)
+--------------------------------------------------------------*/
 if (window.SimpleAnime) {
   new SimpleAnime();
 }
+// --------------- Fim da animação ---------------
