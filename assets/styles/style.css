@@ -756,6 +756,11 @@ header .btn-mobile {
   background-position: 100% 100%;
 }
 
+/* percorre toda imagem de background caso o card esteja com a classe '.card-active' */
+.section-projects .card.card-active .img-project {
+  background-position: 100% 100%;
+}
+
 .section-projects .card .box-buttons {
   opacity: 0;
   pointer-events: none;
@@ -775,6 +780,12 @@ header .btn-mobile {
 }
 
 .section-projects .card:hover .box-buttons {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* adiciona a classe 'card-Hover' para o elemento 'card' em dispositivos mobile */
+.section-projects .card.card-active .box-buttons {
   opacity: 1;
   pointer-events: all;
 }
