@@ -1,4 +1,4 @@
-<h1 align="center">Meu portfólio :notebook:</h1>
+<h1 align="center">Meu portfólio 💼</h1>
 
 📂 Descrição: Este é o meu portfólio, desenvolvido como parte dos meus estudos em front-end, com o objetivo de aprofundar e consolidar o meu conhecimento.
 
