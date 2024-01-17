@@ -1,5 +1,7 @@
 <h1 align="center">Meu portfólio 💼</h1>
 
+Bem-vindo(a) ao meu portfólio!
+
 📂 Desenvolvi este projeto como parte dos meus estudos em front-end, buscando aprofundar e consolidar meu conhecimento.
 
 ## Tecnologias Utilizadas ⚙️
