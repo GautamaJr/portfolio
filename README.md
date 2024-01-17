@@ -1,9 +1,8 @@
 <h1 align="center">Meu portfólio 💼</h1>
 
-📂 Descrição: Este é o meu portfólio, desenvolvido como parte dos meus estudos em front-end, com o objetivo de aprofundar e consolidar o meu conhecimento.
+📂 Desenvolvi este projeto como parte dos meus estudos em front-end, buscando aprofundar e consolidar meu conhecimento.
 
-
-⚙️ Tecnologias Utilizadas:
+## Tecnologias Utilizadas ⚙️
 
 - HTML
 - CSS
@@ -11,4 +10,6 @@
 - JavaScript
 
 
-🌐 Visite em: https://wellingtongautama.vercel.app/
+## Visite Meu Portfólio 🌐
+
+Explore meus projetos e descubra mais sobre mim em [https://wellingtongautama.vercel.app/](https://wellingtongautama.vercel.app/).
