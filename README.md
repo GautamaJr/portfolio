@@ -1,7 +1,17 @@
-<h1 align="center">Meu portfólio :notebook:</h1>
+<h1 align="center">Meu portfólio 💼</h1>
 
-- 📂 Este é o meu portfólio, desenvolvido como parte dos meus estudos em front-end, com o objetivo de aprofundar e consolidar o meu conhecimento.
+Bem-vindo(a) ao meu portfólio!
 
-- ⚠️ As linguagens e recursos utlizados para o desenvolvimento desse projeto foram: HTML, CSS, Bootstrap e JavaScript.
+📂 Desenvolvi este projeto como parte dos meus estudos em front-end, buscando aprofundar e consolidar meu conhecimento.
 
-- :technologist: Visite em: https://wellingtongautama.vercel.app/
+## Tecnologias Utilizadas ⚙️
+
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+
+
+## Visite Meu Portfólio 🌐
+
+Explore meus projetos e descubra mais sobre mim em [https://wellingtongautama.vercel.app/](https://wellingtongautama.vercel.app/).
