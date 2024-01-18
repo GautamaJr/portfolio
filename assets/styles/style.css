@@ -108,6 +108,7 @@ header {
 header .profile-container {
   display: flex;
   flex-direction: column;
+  transition: transform 0.5s ease;
 }
 
 header .profile-container h2 {
@@ -165,12 +166,23 @@ header .img-profile {
   right: 0;
   z-index: 99999;
   width: 0%;
+  max-width: 70%;
   overflow: hidden;
-  transition: 0.5s;
+  transition: max-width 0.5s ease;
 }
 
 .menu-mobile.open-menu {
   width: 70%;
+}
+
+.menu-mobile.open-menu .profile-container {
+  transform: translateX(0); /* Ajuste o posicionamento ao abrir o menu */
+}
+
+.menu-mobile .profile-container {
+  transform: translateX(
+    -100%
+  ); /* Posicione fora da tela quando o menu estiver fechado */
 }
 
 .menu-mobile.open-menu ~ .overlay-menu {
@@ -178,7 +190,7 @@ header .img-profile {
 }
 
 .menu-mobile .btn-close {
-  padding: 20px 5%;
+  padding: 15px 5%;
   width: fit-content;
 }
 
