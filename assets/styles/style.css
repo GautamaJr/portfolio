@@ -325,16 +325,6 @@ header .btn-mobile {
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .section-contact .contact-cards {
-    justify-content: center;
-  }
-
-  .section-projects .project-cards {
-    justify-content: center;
-  }
-}
-
 /*--------------------------------------------------------------
 # CODIGO DA PRIMEIRA SECAO (home)
 --------------------------------------------------------------*/
@@ -730,25 +720,25 @@ header .btn-mobile {
 
 .section-projects .project-cards {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
   gap: 30px;
+  flex-direction: row;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 0 0 30px;
 }
 
 .section-projects .project-cards .card {
-  width: 100%;
   max-width: 380px;
   background-color: #393e4680;
   backdrop-filter: blur(1px);
   border-radius: 20px;
-  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  padding: 30px;
+  padding: 30px 30px 20px;
 }
 
 .section-projects .project-cards span {
@@ -779,6 +769,7 @@ header .btn-mobile {
   position: absolute;
   left: 0;
   top: 0;
+  border-radius: 20px;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -847,10 +838,6 @@ header .btn-mobile {
 @media screen and (max-width: 480px) {
   .section-projects .content-projects .title-projects {
     line-height: 1;
-  }
-
-  .section-projects .project-cards .card {
-    max-width: 280px;
   }
 
   .section-projects .project-cards .img-project {
@@ -953,6 +940,12 @@ header .btn-mobile {
   border-color: #393e4680;
   transform: scale(1.05);
   /* box-shadow: 0 0 10px; */
+}
+
+@media screen and (max-width: 1280px) {
+  .section-contact .contact-cards {
+    justify-content: center;
+  }
 }
 
 /* .section-contact .card img {
