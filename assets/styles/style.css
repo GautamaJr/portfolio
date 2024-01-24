@@ -856,15 +856,6 @@ header .btn-mobile {
   background-size: auto;
 }
 
-.section-contact::after {
-  content: "";
-  display: block;
-  width: auto;
-  height: 2px;
-  background: #393e4680;
-  margin-top: 100px;
-}
-
 .section-contact .container {
   align-items: flex-start;
   flex-direction: column;
@@ -959,7 +950,16 @@ header .btn-mobile {
 # RODAPE (footer)
 --------------------------------------------------------------*/
 .footer {
-  padding: 100px 0 30px;
+  padding-bottom: 30px;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 2px;
+  background: #393e4680;
+  margin-bottom: 146px;
 }
 
 .footer .container {
@@ -1027,14 +1027,14 @@ header .btn-mobile {
 
 .footer .box-copyright {
   margin-left: auto;
-  margin-top: 80px;
+  margin-top: 146px;
 }
 
 .footer .box-copyright span {
   color: white;
   opacity: 0.75;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
