@@ -727,6 +727,20 @@ header .btn-mobile {
   padding: 0 0 30px;
 }
 
+.project-cards::-webkit-scrollbar {
+  width: 18px;
+}
+
+.project-cards::-webkit-scrollbar-thumb {
+  background: #00adb5;
+  border-radius: 8px;
+}
+
+.project-cards::-webkit-scrollbar-track {
+  background: #393e46;
+  border-radius: 8px;
+}
+
 .section-projects .project-cards .card {
   max-width: 380px;
   background-color: #393e4680;
