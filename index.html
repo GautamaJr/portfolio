@@ -12,7 +12,7 @@
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- FIM BOOTSTRAP ICONS -->
-    <link rel="preload" href="./assets/styles/style.css" as="style">
+    <link rel="preload" href="./assets/styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script>document.documentElement.classList.add('js')</script>
 
@@ -114,8 +114,8 @@
     </main>
 
     <!-- Segunda secao -->
-    <section id="about" class="section-about js-scroll">
-        <div class="container">
+    <section id="about" class="section-about">
+        <div class="container js-scroll">
             <div class="content-about">
                 <h2 class="title-about">
                     Sobre <span class="title-colored-about">mim</span>
@@ -143,7 +143,7 @@
 
     <!-- Terceira secao -->
     <section id="projects" class="section-projects js-scroll">
-        <div class="container">
+        <div class="container js-scroll">
             <div class="content-projects">
                 <h2 class="title-projects">
                     Meus<span class="title-colored-projects"> projetos</span>
@@ -154,6 +154,11 @@
                 <div class="card">
                     <div class="img-project" style="background-image: url(./assets/img/projects/bikcraft.jpg);"></div>
                     <span>Bikcraft</span>
+                    <ul class="technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
 
                     <div class="box-buttons">
                         <a href="https://github.com/GautamaJr/bikcraft" target="_blank">GitHub</a>
@@ -164,6 +169,10 @@
                 <div class="card">
                     <div class="img-project" style="background-image: url(./assets/img/projects/portfolio.jpg);"></div>
                     <span>Portfólio</span>
+                    <ul class="technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
 
                     <div class="box-buttons">
                         <a href="https://github.com/GautamaJr/portfolio-tech" target="_blank">GitHub</a>
@@ -174,6 +183,10 @@
                 <div class="card">
                     <div class="img-project" style="background-image: url(./assets/img/projects/flexblog.jpg);"></div>
                     <span>FlexBlog</span>
+                    <ul class="technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
 
                     <div class="box-buttons">
                         <a href="https://github.com/GautamaJr/flexblog" target="_blank">GitHub</a>
@@ -184,6 +197,10 @@
                 <div class="card">
                     <div class="img-project" style="background-image: url(./assets/img/projects/wildbeast.jpg);"></div>
                     <span>Wildbeast</span>
+                    <ul class="technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
 
                     <div class="box-buttons">
                         <a href="https://github.com/GautamaJr/wildbeast" target="_blank">GitHub</a>
@@ -196,8 +213,8 @@
     </section>
 
     <!-- Quarta secao -->
-    <section id="contact" class="section-contact js-scroll">
-        <div class="container">
+    <section id="contact" class="section-contact">
+        <div class="container js-scroll">
             <div class="content-contact">
                 <h2 class="title-contact">
                     Contatos
@@ -233,42 +250,32 @@
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a href="#"><img src="./assets/img/footer-icons/home.svg" alt="icone de casa">Home</a>
+                        <a href="#">Home</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="#about"><img src="./assets/img/footer-icons/about-me.svg" alt="icone de pessoa">Sobre</a>
+                        <a href="#about">Sobre</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="#projects"><img src="./assets/img/footer-icons/gear-project.svg" alt="icone de engrenagem">Projetos</a>
+                        <a href="#projects">Projetos</a>
                     </li>
 
                     <li class="navigation-item">
-                        <a href="#contact"><img src="./assets/img/footer-icons/contact.svg" alt="icone de telefone">Contatos</a>
+                        <a href="#contact">Contatos</a>
                     </li>
                 </ul>
             </nav>
 
-            <nav class="social-medias">
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a class="img-social-medias" href="https://www.instagram.com/_jr.costa/" target="_blank"><img src="./assets/img/footer-icons/instagram.svg" alt="icone do instagram"></a>
-                    </li>
+            <div class="social-medias">
+                <a class="img-social-medias" href="https://www.instagram.com/_jr.costa/" target="_blank"><img src="./assets/img/footer-icons/instagram.svg" alt="icone do instagram"></a>
 
-                    <li class="navigation-item">
-                        <a class="img-social-medias" href="https://www.linkedin.com/in/wellingtongautama/" target="_blank"><img src="./assets/img/footer-icons/linkedin.svg" alt="icone do linkedin"></a>
-                    </li>
+                <a class="img-social-medias" href="https://www.linkedin.com/in/wellingtongautama/" target="_blank"><img src="./assets/img/footer-icons/linkedin.svg" alt="icone do linkedin"></a>
 
-                    <li class="navigation-item">
-                        <a class="img-social-medias" href="https://github.com/GautamaJr" target="_blank"><img src="./assets/img/footer-icons/github.svg" alt="icone do github"></a>
-                    </li>
+                <a class="img-social-medias" href="https://github.com/GautamaJr" target="_blank"><img src="./assets/img/footer-icons/github.svg" alt="icone do github"></a>
 
-                    <li class="navigation-item">
-                        <a class="img-social-medias" href="https://wa.me/5575992704243" target="_blank"><img src="./assets/img/footer-icons/icon-whatsapp.svg" alt="icone do whatsApp"></a>
-                    </li>
-                </ul>
-            </nav>
+                <a class="img-social-medias" href="https://wa.me/5575992704243" target="_blank"><img src="./assets/img/footer-icons/icon-whatsapp.svg" alt="icone do whatsApp"></a>
+            </div>
 
             <div class="box-copyright">
                 <span>© Wellington Gautama. All rights reserved</span>
