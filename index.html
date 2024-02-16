@@ -9,9 +9,6 @@
     <meta name="description" content="Portfólio, Wellington Gautama">
 
     <link rel="icon" sizes="16x16" href="./assets/img/favicon-32.png">
-    <!-- BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- FIM BOOTSTRAP ICONS -->
     <link rel="preload" href="./assets/styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script>document.documentElement.classList.add('js')</script>
@@ -23,11 +20,11 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <div class="title-portfolio">
                 <a href="#">
-                    <h1 class="title">Wellington Gautama</h1>
+                    <h1 class="logo">Wellington Gautama</h1>
                 </a>
             </div>
 
@@ -41,39 +38,36 @@
             </nav>
 
             <!-- EFEITO MENU MOBILE -->
-            <div class="btn-mobile" id="button">
-                <div class="btn-open-menu" id="btn-menu">
-                    <i class="bi bi-list"></i>
-                </div>
-
-                <div class="menu-mobile" id="menu-mobile">
-                    <div class="btn-close">
-                        <i class="bi bi-x-lg"></i>
-                    </div>
-
-                    <div class="profile-container">
+            <div class="menu-mobile" id="menu-mobile">
+                <nav id="nav">
+                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                        <span id="hamburger"></span>
+                    </button>
+                    <div id="menu">
                         <div class="profile">
                             <img class="img-profile" src="./assets/img/profile.png" alt="foto de perfil">
                         </div>
                         <h2 class="text-profile">Wellington Gautama</h2>
+                        <div id="sociais-mobile">
+                            <a class="img-sociais-mobile" href="https://www.instagram.com/_jr.costa/" target="_blank"><img src="./assets/img/footer-icons/instagram.svg" alt="icone do instagram"></a>
 
-                        <div class="list-menu">
-                            <nav>
-                                <ul>
-                                    <li><a class="option-mobile" href="#">Home</a></li>
-                                    <li><a class="option-mobile" href="#about">Sobre</a></li>
-                                    <li><a class="option-mobile" href="#projects">Projetos</a></li>
-                                    <li><a class="option-mobile" href="#contact">Contatos</a></li>
-                                </ul>
-                            </nav>
+                            <a class="img-sociais-mobile" href="https://www.linkedin.com/in/wellingtongautama/" target="_blank"><img src="./assets/img/footer-icons/linkedin.svg" alt="icone do linkedin"></a>
+
+                            <a class="img-sociais-mobile" href="https://github.com/GautamaJr" target="_blank"><img src="./assets/img/footer-icons/github.svg" alt="icone do github"></a>
+
+                            <a class="img-sociais-mobile" href="https://wa.me/5575992704243" target="_blank"><img src="./assets/img/footer-icons/icon-whatsapp.svg" alt="icone do whatsApp"></a>
                         </div>
-                    </div>
-                </div>
-                <div class="overlay-menu" id="overlay-menu"></div>
+                        <ul role="menu">
+                            <li><a class="option-mobile" href="#">Home</a></li>
+                            <li><a class="option-mobile" href="#about">Sobre</a></li>
+                            <li><a class="option-mobile" href="#projects">Projetos</a></li>
+                            <li><a class="option-mobile" href="#contact">Contatos</a></li>
+                        </ul>
+                </nav>
             </div>
+        </div>
 
-
-            <!-- FIM DO EFEITO MENU MOBILE -->
+        <!-- FIM DO EFEITO MENU MOBILE -->
         </div>
     </header>
 

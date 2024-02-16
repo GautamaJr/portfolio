@@ -14,29 +14,40 @@ document.addEventListener("DOMContentLoaded", () => {
 /*--------------------------------------------------------------
 # MENU MOBILE
 --------------------------------------------------------------*/
-let btnMenu = document.getElementById("btn-menu");
-let menu = document.getElementById("menu-mobile");
-let closeButton = document.querySelector(".btn-close");
-let overlay = document.getElementById("overlay-menu");
-let navOptions = document.querySelectorAll(".option-mobile");
+const btnMobile = document.getElementById('btn-mobile');
+const nav = document.getElementById("nav");
+const navOptions = document.querySelectorAll(".option-mobile"); // Selecionar todas as opções do menu
 
-btnMenu.addEventListener("click", () => {
-  menu.classList.add("open-menu");
-});
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  btnMobile.setAttribute('aria-expanded', active);
+  if (active) {
+    btnMobile.setAttribute('aria-label', 'Fechar Menu');
+    document.body.style.overflow = 'hidden'; // Impede o scroll da página
+  } else {
+    btnMobile.setAttribute('aria-label', 'Abrir Menu');
+    document.body.style.overflow = ''; // Restaura o comportamento padrão do scroll da página
+  }
+}
 
-closeButton.addEventListener("click", () => {
-  menu.classList.remove("open-menu");
-});
+function closeMenu() {
+  nav.classList.remove('active');
+  btnMobile.setAttribute('aria-expanded', false);
+  btnMobile.setAttribute('aria-label', 'Abrir Menu');
+  document.body.style.overflow = ''; // Restaura o comportamento padrão do scroll da página
+}
 
-overlay.addEventListener("click", () => {
-  menu.classList.remove("open-menu");
-});
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
 navOptions.forEach((option) => {
-  option.addEventListener("click", () => {
-    menu.classList.remove("open-menu");
+  option.addEventListener('click', () => {
+    closeMenu();
   });
 });
+
 // --------------- Fim do Menu Mobile ---------------
 
 /*--------------------------------------------------------------
