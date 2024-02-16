@@ -8,7 +8,6 @@ Bem-vindo(a) ao meu portfólio!
 
 - HTML
 - CSS
-- Bootstrap
 - JavaScript
 
 
