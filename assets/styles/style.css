@@ -214,14 +214,17 @@ header .logo {
     overflow-y: auto;
   }
 
-  #menu li a {
+  #menu .nav-itens {
+    list-style: none;
+  }
+
+  #menu .option-mobile {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     color: #eeeeee;
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid #393e4680;
-    list-style: none;
     transition: .3s;
   }
 
