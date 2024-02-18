@@ -79,8 +79,7 @@ a {
   align-items: center;
 }
 
-.navigation-list,
-#menu{
+.navigation-list {
   display: flex;
   list-style: none;
   gap: 38px;
@@ -213,6 +212,10 @@ header .logo {
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
+  }
+
+  #menu .nav-itens {
+    list-style: none;
   }
 
   #menu .option-mobile {
